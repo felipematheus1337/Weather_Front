@@ -1,0 +1,31 @@
+{
+
+    "wallpapers" : {
+
+   
+
+    "sun": [
+        {
+          "first_desc":"clear sky"
+        }
+    ],
+    "lowClouds": [
+        {
+            "first_desc": "few clouds"
+        },
+        {
+            "second_desc" :"scattered clouds"
+        }
+    ],
+    "clouds": [
+        {
+            "first_desc":"broken clouds"
+        },
+        {
+           "second_desc":"overcast clouds"
+        }
+    ]
+
+}
+    
+}

@@ -3,7 +3,6 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
        
-       
         
 }
 
@@ -124,6 +123,42 @@ body {
         }
     
 }
+
+#Rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.drop {
+    background: rgb(200, 194, 194);
+    width: 1px;
+    height: 89px;
+    position: absolute;
+    bottom: 200px;
+    animation: falling 1.5s linear infinite;
+}
+
+@media (max-width: 600px) {
+    #Rain {
+        height: 105vh;
+    }
+}
+
+@keyframes falling {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    100% {
+        transform: translate(0, 1000px)
+    }
+}
+
 
 @media only screen and (max-width: 1055px) {
  body {
