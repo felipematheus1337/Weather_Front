@@ -1,0 +1,134 @@
+body {
+        background: url("../assets/imgs/nublado.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+       
+        
+}
+
+.full {
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    border-radius: 80px;
+    height: auto;
+    color: rgb(0, 0, 0);
+    background-color: rgb(89, 82, 82,0.2);
+
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+    width: auto;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px;
+    height: 220px;
+    margin-top: 5px;
+   
+}
+
+.result  p {
+  text-align: center;
+  margin: 0;
+}
+
+.result img {
+    text-align: center;
+    margin: 0;
+}
+
+.result h2{
+   text-align: center;
+    margin: 0;
+}
+
+.result h6 {
+    text-align: center;
+    
+}
+
+.temps {
+    text-align: center;
+    
+}
+
+.container {
+        display: flex;
+        width: 400px;
+        margin: 10px;
+        margin-left: 200px;
+        flex-direction: column;
+        flex-wrap: wrap;
+}
+
+.container h1 {
+    display: block;
+}
+
+.container input {
+    background-color: rgba(244, 222, 199, 0.4);
+    width: 200px;
+    padding: .3em;
+}
+
+.container button {
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 211.5px;
+    padding: .3em;
+    background-color: rgba(215, 204, 193, 0.4);
+   
+}
+
+@media only screen and (max-width: 415px) {
+    
+    .container {
+       flex-direction: column;
+       
+    }
+    
+    .container input {
+        width: 150px;
+        margin-left: 40px;
+    }
+    .container button {
+        margin-top: 10px;
+        width: 150px;
+        margin-left: 40px;
+        font-weight: 400px;
+        font-style: bold;
+        font-size: 1rem;
+    }
+
+        .full {
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: auto;
+            border-radius: 40px;
+            height: auto;
+            color: rgb(0, 0, 0);
+            background-color: rgb(89, 82, 82, 0.2);
+    
+        }
+    
+}
+
+@media only screen and (max-width: 1055px) {
+ body {
+    height: 100vh;
+ }
+}
+
+

@@ -1,0 +1,13 @@
+{
+    "estado": "Clouds",
+    "description": "broken clouds",
+    "icon": "http://openweathermap.org/img/w/04d.png",
+    "temperatura": 24.03,
+    "temperaturaMin": 24.03,
+    "temperaturaMax": 26.05,
+    "humidade": 88,
+    "vento": 7.2,
+    "data": "2022-12-16T21:09:02.000Z",
+    "pais": "BR",
+    "cidade": "Rio de Janeiro"
+}
