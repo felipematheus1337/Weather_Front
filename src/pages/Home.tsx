@@ -71,10 +71,12 @@ export function Home() {
     
 
 
+
     const generateRainAndWallpaper = (desc: string) => {
         let body = document.getElementsByTagName('body')[0];
         if (desc.includes("rain") || desc.includes("drizzle")) {
             setToRain(true);
+            setToSnow(false);
             body.style.background = `url(${chuva})`;
         } else if (desc.includes("snow")) {
             setToSnow(true);
@@ -82,6 +84,7 @@ export function Home() {
             body.style.background = `url(${snow})`;
         } else if (desc.includes("thunder")) {
             setToRain(true);
+            setToSnow(false);
             body.style.background = `url(${tempestade})`;
         } else {
             body.style.background = `url(${generateCustomWallpaper(desc)})`;
@@ -93,19 +96,30 @@ export function Home() {
     const generateCustomWallpaper = (des: string): string => {
         if (desc.wallpapers.clouds.some(item => item.first_desc === des)
             || desc.wallpapers.clouds.some(item => item.second_desc === des)) {
-            setToRain(false);
+            generateSnowAndRain(String(desc));
             return nublado;
         } else if (desc.wallpapers.lowClouds.some(item => item.first_desc === des)
             || desc.wallpapers.lowClouds.some(item => item.second_desc === des)) {
-            setToRain(false);
+            generateSnowAndRain(String(desc));
             return meionublado;
         } else {
-            setToRain(false);
+            generateSnowAndRain(String(desc));
             return sol;
         }
     }
 
-    
+    const generateSnowAndRain = (des: string) => {
+        if (des.includes("snow")) {
+            setToRain(false);
+            setToSnow(true);
+        } else if (des.includes("rain")) {
+            setToRain(true)
+            setToSnow(false)
+        } else {
+            setToRain(false)
+            setToSnow(false)
+        }
+    }
 
 
 
