@@ -1,8 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react"
 import { useEffect } from "react"
 import "./styles.css"
-import dados from "../dados.json";
 import moment from "moment"
 import { FaLongArrowAltDown } from 'react-icons/fa';
 import { FaLongArrowAltUp } from 'react-icons/fa';
@@ -19,7 +19,6 @@ import snow from "../assets/imgs/snow.jpg";
 import Snowfall from 'react-snowfall'
 
 import desc from "../assets/desc/desc.json";
-import { json } from "stream/consumers";
 
 
 
